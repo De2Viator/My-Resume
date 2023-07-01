@@ -1,13 +1,21 @@
+:root {
+  --computer-width: 1200px;
+}
 body {
   background-color: #f5f7fa;
   font-family: "Montserrat", sans-serif;
 }
 
+.main-wrp {
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   display: flex;
-  flex-direction: row-reverse;
-  width: 1350px;
+  flex-direction: row;
   background-color: #fff;
+  width: 90%;
   margin: 40px auto;
 }
 
@@ -23,6 +31,24 @@ body {
 .primary {
   padding: 100px 90px;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    width: 1350px;
+  }
+}
+
+@media(max-width: 550px) {
+  .primary {
+    padding: 90px 50px;
+  }
 }
 
 /*About Me*/
@@ -54,7 +80,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #595959;
-  width: 400px;
+  max-width: 400px;
+}
+
+@media(max-width:550px) {
+  .about-me-name {
+    font-size: 25px;
+  }
 }
 
 /*My Projects*/
@@ -87,6 +119,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #595959;
+  display: inline;
 }
 
 .my-project-bracket {
@@ -160,7 +193,12 @@ body {
 .sidebar {
   background-color: #1e2939;
   width: 370px;
-  padding: 40px 0px;
+  padding: 40px 0;
+  justify-content: center;
+  display: flex;
+}
+.sidebar-info {
+  width: 100%;
 }
 .sidebar-title {
   font-style: normal;
@@ -173,7 +211,7 @@ body {
 
 /*Contacts*/
 .contacts {
-  margin: 50px 5px 0px 40px;
+  margin: 50px 5px 0 40px;
 }
 
 .contacts-type {
@@ -191,6 +229,12 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 100%;
+  }
 }
 
 /*Tech*/
@@ -211,6 +255,15 @@ body {
   color: #fff;
 }
 
+@media (max-width: 1200px) {
+  .tech-skills-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 55px;
+  }
+}
+
 /*Soft*/
 .soft-skills {
   margin: 50px 0px 0px 40px;
@@ -228,7 +281,23 @@ body {
   color: #fff;
 }
 
+.avatar-wrp {
+  display: flex;
+  justify-content: center;
+}
+
 img {
   width: 370px;
-  height: 370px;
+}
+
+@media (max-width: 1200px) {
+  img {
+    width: 60%;
+  }
+}
+
+@media(max-width:550px) {
+    img {
+        width:100%
+    }
 }
