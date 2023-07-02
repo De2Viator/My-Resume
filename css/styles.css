@@ -51,10 +51,16 @@ body {
   }
 }
 
+@media (min-width: 1220px) {
+  .primary {
+    width: 100%;
+  }
+}
+
 /*About Me*/
 
 .about-me {
-  margin: 0px 0px 40px 0px;
+  margin: 0 0 40px 0;
 }
 
 .about-me-profession {
@@ -71,7 +77,7 @@ body {
   font-weight: bold;
   font-size: 45px;
   line-height: 55px;
-  margin: 0px 0px 25px 0px;
+  margin: 0 0 25px 0;
 }
 
 .about-me-description {
@@ -110,7 +116,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #595959;
-  margin: 0px 0px 0px 5px;
+  margin: 0 0 0 5px;
 }
 
 .my-project-link {
@@ -142,7 +148,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px 0;
 }
 
 .period {
@@ -162,7 +168,7 @@ body {
   padding-left: 20px;
 }
 
-.my-work-expirience {
+.my-work-experience {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -171,13 +177,17 @@ body {
 }
 
 .my-work-block {
-  margin: 0px 20px 0px 0px;
+  margin: 0 20px 0 0;
 }
 
 /*My Education*/
 
 .my-education {
   margin-bottom: 80px;
+}
+
+.my-education-info {
+  margin-top: 30px;
 }
 
 .my-education-school {
@@ -240,11 +250,11 @@ body {
 /*Tech*/
 
 .tech-skills {
-  margin: 50px 0px 0px 40px;
+  margin: 50px 0 0 40px;
 }
 
 .tech-skills-list {
-  padding: 0px 0px 0px 20px;
+  padding: 0 0 0 20px;
 }
 
 .tech-skills-item {
@@ -266,11 +276,11 @@ body {
 
 /*Soft*/
 .soft-skills {
-  margin: 50px 0px 0px 40px;
+  margin: 50px 0 0 40px;
 }
 
 .soft-skills-list {
-  padding: 0px 0px 0px 20px;
+  padding: 0 0 0 20px;
 }
 
 .soft-skills-item {
